@@ -1,0 +1,9 @@
+{
+  "name": "fitbit-hr-to-gpx",
+  "description": "adds heart rate data exported from fitbit activity to gpx file",
+  "author": "Jussi Martikainen",
+  "dependencies": {
+    "xmldom": "0.1.19"
+  },
+  "engine": "node >= 0.4.1"
+}
