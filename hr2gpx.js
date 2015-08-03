@@ -44,6 +44,8 @@ function doIt(hrData, gpxData) {
     var hrJson = JSON.parse(hrData);
 
     var doc = new xml.DOMParser().parseFromString(gpxData);
+    var gpx = doc.getElementsByTagName("gpx").item(0);
+    gpx.setAttribute("xmlns:gpxtpx", "http://www.garmin.com/xmlschemas/TrackPointExtension/v1");
     var points = doc.getElementsByTagName('trkpt');
     var numOfPoints = points.length;
 
